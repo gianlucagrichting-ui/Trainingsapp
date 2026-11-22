@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">← Start</a></p>
+    <h1>Training</h1>
+
+    <section class="card">
+      <h2>Neuer Satz</h2>
+      <form id="form">
+        <input id="exercise" list="exercises" placeholder="Übung" required autocomplete="off">
+        <datalist id="exercises"></datalist>
+        <div class="row">
+          <input id="weight" type="number" step="0.5" min="0" placeholder="Gewicht (kg)" required>
+          <input id="reps" type="number" min="1" placeholder="Wdh." required>
+        </div>
+        <button type="submit">Speichern</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Diese Woche</h2>
+      <p id="week" class="muted"></p>
+    </section>
+
+    <section class="card">
+      <h2>Verlauf</h2>
+      <ul id="history"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
